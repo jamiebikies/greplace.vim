@@ -221,7 +221,7 @@ endfunction
 " gSearch
 " Search for a pattern in a group of files using ':grep'
 function! s:gSearch(type, ...)
-    let grep_opt  = '-Ir --exclude-dir=log --exclude-dir=tmp --exclude-dir=.git'
+    let grep_opt  = '-Ir --exclude-dir=log --exclude-dir=vendor --exclude-dir=tmp --exclude-dir=.git'
     let pattern   = ''
     let filenames = ''
 
